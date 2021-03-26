@@ -6,11 +6,23 @@ group 'ru.netology'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 11
+junit4
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+}
+
+test {
+    useJUnit()
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
  }
 
 test {
     useJUnitPlatform()
+ master
 }
